@@ -1,8 +1,12 @@
+@font-face {
+    font-family: boldnue;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helvetice;
+    font-family: boldnue;
 }
 
 html, body{
@@ -11,13 +15,14 @@ html, body{
 }
 
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 nav{    
-    padding: 2.5vw 2vw;
+    padding: 2.5vw 0vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,7 +31,7 @@ nav{
 #nav-part2{
     display: flex;
     align-items: center;
-    gap: 1.2vw;
+    gap: 1vw;
 }
 #nav-part2 h4{
     padding: 10px 20px;
@@ -64,4 +69,95 @@ nav{
 }
 #nav-part2 h4:hover a{
     color: #fff;
+}
+#center{
+    height: 77vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 4.7vw;
+}
+
+#left h3{
+    width: 25vw;
+    font-size: 2vw;
+    line-height: 3vw;
+    padding-left: 1vw;
+    font-family: boldnue;
+    width: 33vw;
+}
+#center h1{
+    font-size: 10vw;
+    line-height: 8vw;
+    font-family: boldnue;
+    font-weight: 500;
+    padding-right: 1.5vw;
+    text-align: right;
+}
+#page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 3.5vw;
+    position: relative;
+}
+#hero-shape{
+    position: absolute;
+    height: 36vw;
+    width: 52vw;
+    right: 0;
+    top: 80vh;
+}
+#hero-1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+}
+#hero-2{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A, #fe3f0a);
+    border-radius: 50%;
+    filter: blur(10px);
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#hero-3{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A, #fe3f0a);
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes anime1 {
+    from{
+        transform: translate(55%, -3%);
+    }
+    to{
+        transform: translate(0%, 10%);
+    }
+}
+@keyframes anime2 {
+    from{
+        transform: translate(5%, -5%);
+    }
+    to{
+        transform: translate(-20%, 30%);
+    }
 }
