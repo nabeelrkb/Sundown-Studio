@@ -22,6 +22,11 @@ body {
   width: 100%;
   height: 100%;
 }
+#main{
+  /* background-color: #000; */
+  position: relative;
+  z-index: 10;
+}
 
 #page1 {
   min-height: 100vh;
@@ -313,4 +318,73 @@ nav {
     display: none;
     background-size: cover;
     background-position: center;
+}
+#page4{
+  height: 40vh;
+  width: 100%;
+  background-color: #efeae3;
+}
+#page5{
+  height: 100vh;
+  width: 100%;
+}
+#footer{
+  height: 100vh;
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 0.5vw 1.2vw;
+}
+#footer h3{
+  font-size: 23vw;
+  line-height: 0.9;
+}
+#footer-div{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6.6vw;
+}
+#footer-bottom{
+  height: 10vh;
+  width: 100%;
+  border-top: 1px solid #7c7c7caa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer-bottom h4{
+  font-family: lightnue;
+  font-size: 1.1vw;
+}
+#left-side{
+  padding: 4.7vw;
+}
+#left-side h4{
+  font-size: 2vw;
+}
+#right-side{
+  padding: 0 5vw;
+  margin-right: 3vw;
+}
+#right-side h5{
+  font-size: 1.3vw;
+  font-family: lightnue;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-bottom: 1vw;
+}
+#email{
+  border-bottom: 1px solid #ffc77955;
+}
+#email h5{
+  color: #ffc7798c;
 }
