@@ -3,7 +3,8 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-var elemC = document.querySelector('#elem-container')
+function page4Animation(){
+    var elemC = document.querySelector('#elem-container')
 var fixed = document.querySelector('#fixed-image')
 elemC.addEventListener("mouseenter", function(){
     fixed.style.display = "block"
@@ -19,3 +20,15 @@ elems.forEach(function(e){
         fixed.style.backgroundImage = `url(${image})`
     })
 })
+}
+
+
+function swiperAnimation(){
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 100,
+    });
+} 
+swiperAnimation()
+page4Animation()
