@@ -32,3 +32,11 @@ function swiperAnimation(){
 } 
 swiperAnimation()
 page4Animation()
+
+var menu = document.querySelector("nav h3")
+var full = document.querySelector("#full-scr")
+var navImg = document.querySelector("nav img")
+menu.addEventListener("click", function(){
+     full.style.top = 0;
+     navImg.style.opacity = 0;
+})
