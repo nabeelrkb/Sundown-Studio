@@ -21,7 +21,9 @@ elems.forEach(function(e){
     })
 })
 }
-
+// elemC.addEventListener("max-width: 600px", function(){
+//     fixed.style.display = "none"
+// })
 
 function swiperAnimation(){
     var swiper = new Swiper(".mySwiper", {
@@ -32,11 +34,3 @@ function swiperAnimation(){
 } 
 swiperAnimation()
 page4Animation()
-
-var menu = document.querySelector("nav h3")
-var full = document.querySelector("#full-scr")
-var navImg = document.querySelector("nav img")
-menu.addEventListener("click", function(){
-     full.style.top = 0;
-     navImg.style.opacity = 0;
-})
