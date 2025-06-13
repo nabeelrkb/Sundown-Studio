@@ -621,6 +621,9 @@ nav h3 {
   filter: blur(60px);
 }
 @media (max-width: 600px) {
+  #main{
+    max-width: 100vw;
+  }
   #page1 {
     min-height: 100vh;
     max-width: 100vw;
@@ -685,12 +688,13 @@ nav h3 {
   }
   #hero-shape {
     position: absolute;
-    height: 36vw;
+    height: 52vw;
     width: 52vw;
-    right: 0;
+    right: 10%;
     top: 50vh;
   }
   #hero-1 {
+    overflow: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -700,9 +704,10 @@ nav h3 {
     filter: blur(20px);
   }
   #hero-2 {
+    overflow: hidden;
     position: absolute;
-    height: 60vw;
-    width: 80vw;
+    height: 60%;
+    width: 80%;
     background: linear-gradient(#fe320a, #fe3f0a);
     border-radius: 50%;
     filter: blur(10px);
@@ -713,9 +718,10 @@ nav h3 {
     animation-direction: alternate;
   }
   #hero-3 {
+    overflow: hidden;
     position: absolute;
-    height: 60vw;
-    width: 80vw;
+    height: 60%;
+    width: 80%;
     background: linear-gradient(#fe320a, #fe3f0a);
     border-radius: 50%;
     filter: blur(25px);
@@ -791,13 +797,14 @@ nav h3 {
     padding-left: 6vw;
   }
   #page2 #sui {
+    overflow: hidden;
     height: 60vw;
     width: 60vw;
     border-radius: 50%;
     background-color: #fe320a;
     background: linear-gradient(to top right, #ff2d03, #ff5c0b);
     top: 25%;
-    left: 43%;
+    left: 30%;
     position: absolute;
     filter: blur(20px);
     animation-name: sui;
@@ -832,7 +839,7 @@ nav h3 {
     background-color: #efeae3;
   }
   .elem {
-    width: 100%;
+    width: 100vw;
     height: 25vh;
     position: relative;
     background-color: #efeae3;
@@ -840,8 +847,8 @@ nav h3 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 0 3vw;
-    margin-left: 8vw;
+    padding: 0 9vw;
+    /* margin-left: 8vw; */
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.168); */
   }
   #img1 {
@@ -943,7 +950,7 @@ nav h3 {
     background-color: #efeae3;
   }
   #projects {
-    width: 35%;
+    width: 39%;
     margin-left: 2.2vw;
   }
   #projects h4 {
@@ -985,7 +992,8 @@ nav h3 {
     width: 90%;
     background-color: #000000;
     border-radius: 20px;
-    margin: 2vw 2vw;
+    margin: 2vw;
+    margin-left: 4vw;
     display: flex;
     flex-direction: column;
     margin-top: 12vw;
@@ -1074,7 +1082,7 @@ nav h3 {
     width: 100%;
   }
   #footer {
-    height: 70vh;
+    height: 80vh;
     position: fixed;
     z-index: 9;
     bottom: 0;
@@ -1150,24 +1158,48 @@ nav h3 {
     color: #ffc7798c;
   }
   #gooey1 {
-    height: 40vh;
-    width: 100vw;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
     top: 0%;
     border-bottom-left-radius: 100%;
     filter: blur(15px);
   }
   #gooey2 {
-    height: 40vh;
-    width: 100vw;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
     top: 0%;
     border-bottom-left-radius: 100%;
     filter: blur(15px);
   }
   #gooey3 {
-    height: 40vh;
-    width: 100vw;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
     top: 0%;
     border-bottom-left-radius: 100%;
     filter: blur(15px);
   }
+  #gooey{
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  @keyframes gooey1 {
+  from {
+    transform: translate(2%, -2%);
+  }
+  to {
+    transform: translate(-2%, 2%);
+  }
+}
+@keyframes gooey2 {
+  from {
+    transform: translate(-2%, 2%);
+  }
+  to {
+    transform: translate(2%, -2%);
+  }
+}
 }
