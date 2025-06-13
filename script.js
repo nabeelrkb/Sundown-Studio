@@ -21,10 +21,6 @@ elems.forEach(function(e){
     })
 })
 }
-// elemC.addEventListener("max-width: 600px", function(){
-//     fixed.style.display = "none"
-// })
-
 function swiperAnimation(){
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: "auto",
@@ -34,3 +30,8 @@ function swiperAnimation(){
 } 
 swiperAnimation()
 page4Animation()
+
+var loader = document.querySelector("#loader")
+setTimeout(function(){
+    loader.style.top = "-120%"
+},4000)
